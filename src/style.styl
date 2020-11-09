@@ -1,0 +1,76 @@
+#app
+    width 1024px
+    height 768px
+    margin auto
+#top 
+    width 100%
+    height 65px
+#content
+    width 100%
+    height calc(768px - 65px - 20px)
+#left
+    width 215px
+    height 100%
+    float left
+#right
+    width 770px
+    height 100%
+    float left
+#menu
+    width 100%
+    height calc(100% - 25px)
+    font-family '標楷體'
+    text-align center
+    #club
+        font-weight 500
+        font-size 24px
+        text-decoration underline
+        color #f0f
+        margin-top 0
+    .item
+        width 200px
+        height 35px
+        color black
+        font-size 16px
+        line-height 35px
+        margin-bottom 5px
+        // 在 Vue 的 CSS 裡面只能引用 src的圖片
+        // 必須要加 ~@ 才可以指向到 src資料夾
+        background-image url('~@/assets/menu1.png')
+        background-size cover
+        background-position center
+
+        &:hover
+            background-image url('~@/assets/menu2.png')
+#update
+    width 100%
+    height 25px
+    text-align center
+    font-family '標楷體'
+    color #000
+    font-size 16px
+    p
+        margin-top 0
+        margin-bottom 0
+
+#mar
+    font-size: 24px
+    font-family '標楷體'
+    color blue
+    width 100%
+    height 29px
+#main
+    width 100%
+    height calc(100% - 29px)
+    text-align center
+    font-size 24px
+    font-family '標楷體'
+    font-weight bold
+    font-style italic
+    color: blue
+#footer
+    font-family '標楷體'
+    font-size 16px
+    text-align center
+    width 100%
+    height 20px
